@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aluron Coin</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <audio id="background-music" loop>
+        <source src="music/background-music.mp3" type="audio/mpeg">
+        Ваш браузер не поддерживает аудио.
+    </audio>
+    <header>
+        <img src="img/logo.png" alt="Aluron Coin Logo" class="logo" id="logo">
+        <h1>Добро пожаловать в Aluron Coin</h1>
+        <nav>
+            <a href="#news">Новости</a>
+            <a href="#gallery">Галерея</a>
+            <a href="#contact">Контакты</a>
+        </nav>
+        <button id="music-toggle">Включить музыку</button>
+    </header>
+    <main>
+        <section id="news">
+            <h2>Новости</h2>
+            <article>
+                <h3>Что такое Aluron Coin ?</h3>
+                <p>Aluron Coin которого создал 17 летний 
+                    Мамараджабов Алиджон 
+                    Студент из Красногорского 
+                    Колледжа используя
+                    технологии блокчейн 
+                    И он позволяет обеспечить 
+                    прозрачность и безопасность 
+                    транзакции а также 
+                    обеспечить высокую 
+                    скорость обработки данных
+                    
+                    Aluron Coin в данное время 
+                    находится в бирже Blum 
+                    
+                    И по словам автора
+                    Наша цель стать новой 
+                    валютой и сделать наших 
+                    инвесторов богаче и вы тоже 
+                    можете стать нашим 
+                    инвестором купив монету 
+                    Aluron Coin 
+                    
+                    И как всегда Дисклеймер 
+                    По словам автора что он 
+                    не берет за себя ответственность
+                    за ваши покупки и продажи 
+                    за ваши минусы и плюсы</p>
+                <img src="img/news-image.jpg" alt="Изображение новостей" class="news-image">
+            </article>
+            <article>
+                <h3>Поддержка пользователей</h3>
+                <p>С нашей техподдержкой вы всегда можете связаться для получения помощи.</p>
+            </article>
+        </section>
+        
+        <section id="gallery">
+            <h2>Галерея</h2>
+            <div class="image-container">
+                <div class="image-box">
+                    <img src="img/aluron-coin-1.jpg" alt="Aluron Coin Image 1" />
+                </div>
+                <div class="image-box">
+                    <img src="img/aluron-coin-2.jpg" alt="Aluron Coin Image 2" />
+                </div>
+            </div>
+        </section>
+        
+        <section id="contact">
+            <h2>Техподдержка</h2>
+            <div class="support">
+                <button id="support-button">Запрос в техподдержку</button>
+                <div class="support-form" id="support-form" style="display:none;">
+                    <h3>Ваш запрос</h3>
+                    <textarea id="support-message" rows="4" placeholder="Опишите вашу проблему..."></textarea>
+                    <button id="send-support">Отправить</button>
+                </div>
+                <p>Техподдержка: support@aluroncoin.com</p>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+    <script src="bubbles.js"></script> <!-- Подключаем файл для брызг -->
+    
+
+
+
+</body>
+</html>

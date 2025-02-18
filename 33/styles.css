@@ -1,0 +1,154 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a2e; /* Темный цвет фона */
+    color: #eaeaea; /* Светлый цвет текста */
+}
+
+header {
+    background: #162447; /* Темно-синий */
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header img.logo {
+    width: 120px;
+    transition: transform 0.3s ease;
+}
+
+header img.logo:hover {
+    transform: scale(1.2); /* Увеличение логотипа при наведении */
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+h2 {
+    color: #fff;
+}
+
+.news-image {
+    width: 250px; /* Уменьшаем размер картинки новостей */
+    float: right; /* Устанавливаем картинку справа */
+    margin-left: 20px;
+    border-radius: 8px;
+}
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.image-box {
+    flex: 1;
+    min-width: 100px; /* Уменьшаем минимальную ширину для изображений */
+}
+
+.image-box img {
+    width: 100%;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.image-box img:hover {
+    transform: scale(1.05); /* Увеличение изображений при наведении */
+}
+
+.social-links {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.social-links a {
+    margin: 0 10px;
+    color: #eaeaea;
+    text-decoration: none;
+}
+
+.support {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #162447; /* Темно-синий */
+    padding: 5px;
+    border-radius: 5px;
+    z-index: 100; /* Повышаем приоритет отображения */
+}
+
+#support-form {
+    display: none; /* Скрываем форму изначально */
+    margin-top: 5px;
+    background-color: #1a1a2e;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#support-form textarea {
+    width: 100%;
+    margin-top: 5px;
+}
+
+#support-button {
+    background-color: #00a8ff; /* Цвет кнопки */
+    color: white;
+    border: none;
+    padding: 5px; /* Уменьшенный размер кнопки */
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#send-support {
+    background-color: #00a8ff;
+    color: white;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+
+#music-toggle {
+    background-color: #00a8ff;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+
+.heart {
+    position: absolute;
+    color: red;
+    font-size: 24px;
+    pointer-events: none;
+    animation: growAndFade 2s forwards;
+}
+
+@keyframes growAndFade {
+    0% {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: translateY(-50px) scale(1.5);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-100px) scale(0);
+        opacity: 0;
+    }
+}
